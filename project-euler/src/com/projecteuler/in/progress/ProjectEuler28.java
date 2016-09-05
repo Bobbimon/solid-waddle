@@ -3,7 +3,7 @@ package com.projecteuler.in.progress;
 import java.util.Arrays;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class ProjectEuler28 {
 

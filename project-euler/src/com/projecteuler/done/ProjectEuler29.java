@@ -7,7 +7,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class ProjectEuler29 {
 

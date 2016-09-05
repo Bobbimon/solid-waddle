@@ -4,7 +4,7 @@ import com.projecteuler.common.NumberUtil;
 import com.projecteuler.common.FileUtil;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class ProjectEuler42 {
 

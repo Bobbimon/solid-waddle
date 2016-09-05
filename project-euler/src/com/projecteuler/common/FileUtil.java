@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class FileUtil {
 

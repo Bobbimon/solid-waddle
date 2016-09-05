@@ -3,7 +3,7 @@ package com.projecteuler.done;
 import java.math.BigInteger;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class ProjectEuler48 {
 

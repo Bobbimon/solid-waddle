@@ -3,7 +3,7 @@ package com.projecteuler.in.progress;
 import com.projecteuler.common.Primes;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class ProjectEuler41 {
 

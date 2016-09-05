@@ -1,9 +1,8 @@
 package com.projecteuler.objects;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class LatticePath {
-
 
 }

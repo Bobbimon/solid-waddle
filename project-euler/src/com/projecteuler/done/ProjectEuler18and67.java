@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 /**
- * @author Tobias Nilsson {@literal <mailto:tobias.nilsson@so4it.com/>}
+ * @author Tobias Nilsson
  */
 public class ProjectEuler18and67 {
 
