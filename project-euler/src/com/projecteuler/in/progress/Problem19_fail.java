@@ -3,7 +3,7 @@ package com.projecteuler.in.progress;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler19_fail {
+public class Problem19_fail {
 
     private int sundayFirstDayOfTheMonth = 0;
 

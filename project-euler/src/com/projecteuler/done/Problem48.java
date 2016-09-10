@@ -5,7 +5,7 @@ import java.math.BigInteger;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler48 {
+public class Problem48 {
 
     public static void main(String[] args) {
 

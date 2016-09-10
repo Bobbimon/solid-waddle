@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler29 {
+public class Problem29 {
 
     public static void main(String[] args) {
 

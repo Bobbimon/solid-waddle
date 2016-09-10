@@ -3,7 +3,7 @@ package com.projecteuler.in.progress;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler15 {
+public class Problem15 {
 
     public static void main(String[] args) {
 

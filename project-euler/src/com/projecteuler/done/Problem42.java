@@ -6,7 +6,7 @@ import com.projecteuler.common.FileUtil;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler42 {
+public class Problem42 {
 
     public static void main(String[] args) {
 

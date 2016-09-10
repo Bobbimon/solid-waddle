@@ -3,11 +3,11 @@ package com.projecteuler.in.progress;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler19 {
+public class Problem19 {
 
     private int sundayFirstDayOfTheMonth;
 
-    public ProjectEuler19(int sundayFirstDayOfTheMonth) {
+    public Problem19(int sundayFirstDayOfTheMonth) {
         this.sundayFirstDayOfTheMonth = sundayFirstDayOfTheMonth;
     }
 
@@ -21,24 +21,24 @@ public class ProjectEuler19 {
 
     public static void main(String[] args) {
 
-        ProjectEuler19 projectEuler19 = new ProjectEuler19(0);
+        Problem19 problem19 = new Problem19(0);
 
         int totalAmountOfDays = 0;
-        projectEuler19.daysOfYear(1900, totalAmountOfDays);
+        problem19.daysOfYear(1900, totalAmountOfDays);
 
-        int sundaysFirstYear = projectEuler19.getSundayFirstDayOfTheMonth();
+        int sundaysFirstYear = problem19.getSundayFirstDayOfTheMonth();
 
         totalAmountOfDays = 0;
-        projectEuler19.setSundayFirstDayOfTheMonth(0);
+        problem19.setSundayFirstDayOfTheMonth(0);
 
         int startYear = 1901;
         int endYear = 2000;
 
         for (int year = startYear; year <= endYear; year++) {
-            totalAmountOfDays += projectEuler19.daysOfYear(year, totalAmountOfDays);
+            totalAmountOfDays += problem19.daysOfYear(year, totalAmountOfDays);
         }
 
-        System.out.println(projectEuler19.getSundayFirstDayOfTheMonth() - sundaysFirstYear);
+        System.out.println(problem19.getSundayFirstDayOfTheMonth() - sundaysFirstYear);
 
     }
 

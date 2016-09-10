@@ -5,7 +5,7 @@ import com.projecteuler.common.Primes;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler50 {
+public class Problem50 {
 
     public static void main(String[] args) {
 

@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler18and67 {
+public class Problem18and67 {
 
     public static void main(String[] args) {
 

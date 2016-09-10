@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler22 {
+public class Problem22 {
 
     public static void main(String[] args) {
         String filePath = "resources/p022_names.txt";

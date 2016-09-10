@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * @author Tobias Nilsson
  */
-public class ProjectEuler25 {
+public class Problem25 {
 
     public static void main(String[] args) {
 
