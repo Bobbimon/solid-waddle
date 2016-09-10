@@ -1,7 +1,7 @@
-package com.projecteuler.done;
+package com.pe.done;
 
-import com.projecteuler.common.NumberUtil;
-import com.projecteuler.common.FileUtil;
+import com.pe.common.NumberUtil;
+import com.pe.common.FileUtil;
 
 /**
  * @author Tobias Nilsson

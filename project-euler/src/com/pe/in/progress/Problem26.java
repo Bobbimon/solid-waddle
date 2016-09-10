@@ -1,4 +1,4 @@
-package com.projecteuler.in.progress;
+package com.pe.in.progress;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

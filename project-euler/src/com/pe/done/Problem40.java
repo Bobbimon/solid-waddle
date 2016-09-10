@@ -1,9 +1,4 @@
-package com.projecteuler.done;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+package com.pe.done;
 
 /**
  * Created by TobNil on 2016-09-08.

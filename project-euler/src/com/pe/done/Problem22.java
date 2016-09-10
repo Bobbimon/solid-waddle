@@ -1,4 +1,4 @@
-package com.projecteuler.common;
+package com.pe.done;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,17 +8,18 @@ import java.util.Scanner;
 /**
  * @author Tobias Nilsson
  */
-public class FileUtil {
+public class Problem22 {
 
-    public static String[] readFileToSortedStringArray(String filePath) {
-
+    public static void main(String[] args) {
+        String filePath = "resources/p022_names.txt";
+        String content;
         int rows = 0;
         try {
             Scanner scanner = new Scanner(new File(filePath)).useDelimiter("\\,");
 
-            // Reads how many rows the file contains
             while (scanner.hasNext()) {
-                scanner.useDelimiter(",").next().replace("\"", "");
+                content = scanner.useDelimiter(",").next().replace("\"", "");
+                System.out.println(content);
                 rows++;
             }
         } catch (FileNotFoundException e) {
@@ -37,28 +38,27 @@ public class FileUtil {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
         Arrays.sort(contents);
 
-        return contents;
-    }
-
-    public static long[] readFileToSortedCharValueSumArray(String filePath) {
-
-        String[] stringArray = readFileToSortedStringArray(filePath);
-
-        long[] charSumArray = new long[stringArray.length];
+        long multiplier = 1;
+        long[] productArray = new long[rows];
         int val = 0;
-        int i = 0;
-        for (String s : stringArray) {
+        for (String s : contents) {
             char[] chars = s.toCharArray();
             for (char aChar : chars) {
                 val += Character.getNumericValue(aChar) - 9;
             }
-            charSumArray[i] = val;
-            i++;
+            productArray[(int) multiplier - 1] = multiplier * val;
             val = 0;
+            multiplier++;
         }
 
-        return charSumArray;
+        long sum = 0;
+        for (long l : productArray) {
+            sum += l;
+        }
+
+        System.out.println(sum);
     }
 }

@@ -1,4 +1,4 @@
-package com.projecteuler.objects;
+package com.pe.objects;
 
 /**
  * @author Tobias Nilsson

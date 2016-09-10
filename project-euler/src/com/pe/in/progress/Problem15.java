@@ -1,4 +1,4 @@
-package com.projecteuler.in.progress;
+package com.pe.in.progress;
 
 /**
  * @author Tobias Nilsson

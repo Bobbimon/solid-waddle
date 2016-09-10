@@ -1,11 +1,7 @@
-package com.projecteuler.done;
+package com.pe.done;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 /**
  * Created by TobNil on 2016-09-05.

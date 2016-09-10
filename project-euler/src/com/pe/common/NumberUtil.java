@@ -1,4 +1,4 @@
-package com.projecteuler.common;
+package com.pe.common;
 
 import java.util.Arrays;
 

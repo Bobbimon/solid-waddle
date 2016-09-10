@@ -1,4 +1,4 @@
-package com.projecteuler.test;
+package com.pe.test;
 
 import java.util.Enumeration;
 import java.util.HashMap;

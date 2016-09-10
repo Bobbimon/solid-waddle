@@ -1,6 +1,6 @@
-package com.projecteuler.in.progress;
+package com.pe.in.progress;
 
-import com.projecteuler.common.Primes;
+import com.pe.common.Primes;
 
 /**
  * @author Tobias Nilsson
