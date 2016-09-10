@@ -11,7 +11,7 @@ public class Problem15 {
             for (int j = 1; j < 3; j++) {
                 System.out.println(routes(i, j));
             }
-            System.out.println();
+            System.out.println("hej");
         }
 
 
