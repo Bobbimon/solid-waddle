@@ -1,101 +1,74 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ 
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>hello-world</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Jetty HelloWorld</name>
+ 
+  <properties>
+    <jetty.version>7.2.0.v20101020</jetty.version>
+    <pi4j.version>1.1</pi4j.version>
+  </properties>
+ 
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>${jetty.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.pi4j</groupId>
+      <artifactId>pi4j-core</artifactId>
+      <version>${pi4j.version}</version>
+    </dependency>
 
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>org.example</groupId>
-    <artifactId>hello-world</artifactId>
-    <version>0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>Jetty HelloWorld</name>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-web</artifactId>
+          <version>4.1.6.RELEASE</version>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+          <version>4.0.6.RELEASE</version>
+      </dependency>
 
-    <properties>
-        <jetty.version>7.2.0.v20101020</jetty.version>
-        <pi4j.version>1.1</pi4j.version>
-        <spring.context.version>4.3.5.RELEASE</spring.context.version>
-        <spring.web.dependencies>4.1.1.RELEASE</spring.web.dependencies>
-    </properties>
+      <dependency>
+          <groupId>io.springfox</groupId>
+          <artifactId>springfox-swagger2</artifactId>
+          <version>2.6.1</version>
+      </dependency>
+      <dependency>
+          <groupId>io.springfox</groupId>
+          <artifactId>springfox-swagger-ui</artifactId>
+          <version>2.6.1</version>
+      </dependency>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-server</artifactId>
-            <version>${jetty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.pi4j</groupId>
-            <artifactId>pi4j-core</artifactId>
-            <version>${pi4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>4.3.7.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>4.1.1.RELEASE</version>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <!-- This plugin is needed for the servlet example -->
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>${jetty.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <mainClass>org.example.HelloWorld</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-    <!--<build>-->
-        <!--<finalName>cabonline-booking-client-endpoint-development</finalName>-->
-        <!--<resources>-->
-            <!--<resource>-->
-                <!--<directory>src/main/resources</directory>-->
-                <!--<filtering>true</filtering>-->
-            <!--</resource>-->
-        <!--</resources>-->
-        <!--<plugins>-->
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-war-plugin</artifactId>-->
-            <!--</plugin>-->
-            <!--<plugin>-->
-                <!--<groupId>org.eclipse.jetty</groupId>-->
-                <!--<artifactId>jetty-maven-plugin</artifactId>-->
-                <!--<configuration>-->
-                    <!--<httpConnector>-->
-                        <!--<port>${jetty.http.port}</port>-->
-                    <!--</httpConnector>-->
-                    <!--<daemon>${jetty.daemon}</daemon>-->
-                    <!--<webApp>-->
-                        <!--<contextPath>/</contextPath>-->
-                    <!--</webApp>-->
-                    <!--&lt;!&ndash;-->
-                    <!--<jettyXml>src/main/resources/jetty-jmx.xml</jettyXml>-->
-                    <!--&ndash;&gt;-->
-                    <!--<stopPort>${jetty.stopPort}</stopPort>-->
-                    <!--<stopKey>${jetty.stopKey}</stopKey>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
-        <!--</plugins>-->
-    <!--</build>-->
+  </dependencies>
+ 
+  <build>
+    <plugins>
+      <plugin>
+        <!-- This plugin is needed for the servlet example -->
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>${jetty.version}</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution><goals><goal>java</goal></goals></execution>
+        </executions>
+        <configuration>
+          <mainClass>org.example.HelloWorld</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

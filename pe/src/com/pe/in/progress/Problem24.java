@@ -9,7 +9,10 @@ public class Problem24 {
 
         long[] lex = {0, 1, 2};
 
-        int n = 3;
+        double n = 10;
+
+        System.out.println(n * (n-1));
+        //System.out.println(Math.pow(n,n));
 
 
     }

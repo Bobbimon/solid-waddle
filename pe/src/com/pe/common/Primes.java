@@ -1,6 +1,8 @@
 package com.pe.common;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Tobias Nilsson
@@ -67,5 +69,20 @@ public class Primes {
         System.arraycopy(primes, 0, generatedPrimes, 0, nrOfPrimes);
 
         return generatedPrimes;
+    }
+
+    public static List<Long> generatePrimes(int n) {
+        List<Long> primes = new ArrayList<>();
+        long i;
+        long iterator = 1;
+
+        while (primes.size() < n ) {
+
+            for (i)
+
+            iterator++;
+        }
+
+        return null;
     }
 }

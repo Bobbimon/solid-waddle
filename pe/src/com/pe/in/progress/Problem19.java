@@ -39,9 +39,7 @@ public class Problem19 {
         }
 
         System.out.println(problem19.getSundayFirstDayOfTheMonth() - sundaysFirstYear);
-
     }
-
 
     private int daysOfYear(int year, int previewsDays) {
 
